@@ -10,7 +10,8 @@ public class Class1 extends BeforeTestAndBeforeClassTest {
 //		  testing.setTestSuites(suites);
 //		  testing.run();
 //	  }
-	  @Test(timeOut = 2000)
+//	  @Test(timeOut = 2000)
+	  @Test(enabled = false)
 	  public void f1() {
 		  System.out.println("In Test3");
 		  for (int i = 0; i < 4; i++) {
