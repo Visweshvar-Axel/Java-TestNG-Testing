@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.beust.jcommander.Parameters;
+
 public class Groups {
 	  @Test(groups = {"AddItems"})
 	  public void f1() {
@@ -59,4 +61,5 @@ public class Groups {
 	  public void sendEmail() {
 		  System.out.println("Send Email");
 	  }
+	 
 }
