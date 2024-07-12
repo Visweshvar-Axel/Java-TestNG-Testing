@@ -51,11 +51,11 @@ public class Groups {
 	  public void openGmail() {
 		  System.out.println("Opening Gmail");
 	  }
-	  @AfterTest(groups = {"Email"})
+	  @AfterTest(groups = {"Email"}, dependsOnMethods = "openGmail")
 	  public void composeEmail() {
 		  System.out.println("Compose Email");
 	  }
-	  @AfterTest(groups = {"Email"})
+	  @AfterTest(groups = {"Email"}, dependsOnMethods = "composeEmail")
 	  public void sendEmail() {
 		  System.out.println("Send Email");
 	  }
