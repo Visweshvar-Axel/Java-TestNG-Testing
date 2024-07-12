@@ -1,5 +1,6 @@
 package BeforeTest_BeforeClass;
 
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 public class Class1 extends BeforeTestAndBeforeClassTest {
@@ -25,6 +26,7 @@ public class Class1 extends BeforeTestAndBeforeClassTest {
 	  }
 	  @Test
 	  public void f2() {
+//		  throw new SkipException("asd");
 		  System.out.println("In Test4");
 	  }
 }
