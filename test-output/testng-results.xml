@@ -1,59 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-12T23:40:24 IST" name="Sample Suite" finished-at="2024-07-12T23:40:24 IST" duration-ms="47">
+  <suite started-at="2024-07-13T00:01:15 IST" name="Sample Suite" finished-at="2024-07-13T00:01:15 IST" duration-ms="57">
     <groups>
-      <group name="DeleteItems">
-        <method signature="Groups.f2()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" name="f2" class="TestNGAnnotations.Groups"/>
-      </group> <!-- DeleteItems -->
-      <group name="AddItems">
-        <method signature="Groups.f1()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" name="f1" class="TestNGAnnotations.Groups"/>
-      </group> <!-- AddItems -->
     </groups>
-    <test started-at="2024-07-12T23:40:24 IST" name="Testing Groups in TestNG" finished-at="2024-07-12T23:40:24 IST" duration-ms="47">
-      <class name="TestNGAnnotations.Groups">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="BeforeSuite" finished-at="2024-07-12T23:40:24 IST" duration-ms="11" status="PASS">
+    <test started-at="2024-07-13T00:01:15 IST" name="Testing Parameterization of Data" finished-at="2024-07-13T00:01:15 IST" duration-ms="57">
+      <class name="TestNGAnnotations.AnnotationSequence">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="BeforeSuite" finished-at="2024-07-13T00:01:15 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="beforeTest" finished-at="2024-07-12T23:40:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="beforeTest" finished-at="2024-07-13T00:01:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="beforeMethod" finished-at="2024-07-12T23:40:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="beforeMethod" finished-at="2024-07-13T00:01:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f1()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="f1" finished-at="2024-07-12T23:40:24 IST" duration-ms="10" status="PASS">
+        <test-method signature="f1()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="f1" finished-at="2024-07-13T00:01:15 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f1 -->
-        <test-method signature="f2()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="f2" finished-at="2024-07-12T23:40:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="afterMethod" finished-at="2024-07-13T00:01:15 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="beforeMethod" finished-at="2024-07-12T23:40:24 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="beforeMethod" finished-at="2024-07-13T00:01:15 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="openGmail()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="openGmail" finished-at="2024-07-12T23:40:24 IST" duration-ms="1" status="PASS">
+        <test-method signature="f2()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="f2" finished-at="2024-07-13T00:01:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openGmail -->
-        <test-method is-config="true" signature="composeEmail()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="composeEmail" finished-at="2024-07-12T23:40:24 IST" depends-on-methods="TestNGAnnotations.Groups.openGmail" duration-ms="0" status="PASS">
+        </test-method> <!-- f2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="afterMethod" finished-at="2024-07-13T00:01:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- composeEmail -->
-        <test-method is-config="true" signature="sendEmail()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="sendEmail" finished-at="2024-07-12T23:40:24 IST" depends-on-methods="TestNGAnnotations.Groups.composeEmail" duration-ms="0" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testingParameters(java.lang.String)[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="testingParameters" finished-at="2024-07-13T00:01:15 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[watch]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendEmail -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestNGAnnotations.Groups@6404f418]" started-at="2024-07-12T23:40:24 IST" name="AfterSuite" finished-at="2024-07-12T23:40:24 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testingParameters -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="beforeMethod" finished-at="2024-07-13T00:01:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="afterMethod" finished-at="2024-07-13T00:01:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="afterTest" finished-at="2024-07-13T00:01:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestNGAnnotations.AnnotationSequence@2ed2d9cb]" started-at="2024-07-13T00:01:15 IST" name="AfterSuite" finished-at="2024-07-13T00:01:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
-      </class> <!-- TestNGAnnotations.Groups -->
-    </test> <!-- Testing Groups in TestNG -->
+      </class> <!-- TestNGAnnotations.AnnotationSequence -->
+    </test> <!-- Testing Parameterization of Data -->
   </suite> <!-- Sample Suite -->
 </testng-results>
