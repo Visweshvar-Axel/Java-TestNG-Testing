@@ -15,34 +15,34 @@ public class Groups {
 	  public void f1() {
 	  	System.out.println("Adding Items to Cart");
 	  }
-	  @Test
+	  @Test(groups = {"DeleteItems"})
 	  public void f2() {
 	  	System.out.println("Deleting Items to Cart");
 	  }
-	  @BeforeMethod(groups = {"AddItems"})
+	  @BeforeMethod(groups = {"AddItems","DeleteItems"})
 	  public void beforeMethod() {
 		  System.out.println("Launch Browser, Login to Flipkart");
 	  }
 
-	  @AfterMethod(groups = {"AddItems"})
+	  @AfterMethod(groups = {"AddItems","DeleteItems"})
 	  public void afterMethod() {
 		  System.out.println("Close Browse:");
 	  }
 
-	  @BeforeTest(groups = {"AddItems"})
+	  @BeforeTest(groups = {"AddItems","DeleteItems","DataPrep"})
 	  public void beforeTest() {
 		  System.out.println("Fetch Data from xml");
 	  }
 
-	  @AfterTest(groups = {"AddItems"})
+	  @AfterTest(groups = {"AddItems","DeleteItems"})
 	  public void afterTest() {
 		  System.out.println("Clears Data from the cache");
 	  }
-	  @BeforeSuite(groups = {"AddItems"})
+	  @BeforeSuite(groups = {"AddItems","DeleteItems","DataPrep"})
 	  public void BeforeSuite() {
 		  System.out.println("Create Log Files, Create obj ect3 for Reporting");
 	  }
-	  @AfterSuite(groups = {"AddItems"})
+	  @AfterSuite(groups = {"AddItems","DeleteItems"})
 	  public void AfterSuite() {
 		  System.out.println("Close log Files objects for Reporting");
 	  }

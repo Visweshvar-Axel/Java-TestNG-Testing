@@ -2,7 +2,16 @@
 <!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
 <suite name = "Sample Suite">
 	<test name = "Testing Groups in TestNG">
-	 <groups></groups>
+	 <groups>
+	 	<run>
+	 		<include name = "AddItems"></include>
+	 		<include name = "DeleteItems"></include>
+	 		<include name = "DataPrep"></include>
+	 	</run>
+	 </groups>
+	 <classes>
+			<class name = "TestNGAnnotations.Groups"></class>
+	 </classes>
 	</test>
 </suite>
 <!--<suite name = "Sample Suite">
