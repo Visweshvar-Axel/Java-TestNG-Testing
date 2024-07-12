@@ -1,11 +1,6 @@
 package BeforeTest_BeforeClass;
 
-import java.util.List;
-
-import org.testng.TestNG;
 import org.testng.annotations.Test;
-
-import com.beust.jcommander.internal.Lists;
 
 public class Class1 extends BeforeTestAndBeforeClassTest {
 //	  public static void main(String[] args) {
@@ -15,9 +10,17 @@ public class Class1 extends BeforeTestAndBeforeClassTest {
 //		  testing.setTestSuites(suites);
 //		  testing.run();
 //	  }
-	  @Test
+	  @Test(timeOut = 2000)
 	  public void f1() {
 		  System.out.println("In Test3");
+		  for (int i = 0; i < 4; i++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	  }
 	  @Test
 	  public void f2() {
