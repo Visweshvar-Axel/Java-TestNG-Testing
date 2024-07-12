@@ -164,6 +164,10 @@
         &lt;include name=&quot;DataPrep&quot;/&gt;
         &lt;include name=&quot;Email&quot;/&gt;
       &lt;/define&gt; &lt;!-- ExecuteAllGropus --&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;ExecuteAllGropus&quot;/&gt;
+        &lt;exclude name=&quot;Teardown&quot;/&gt;
+      &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestNGAnnotations.Groups&quot;/&gt;
@@ -226,7 +230,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f1')
 data.setCell(0, 2, 'TestNGAnnotations.Groups')
-data.setCell(0, 3, 9);
+data.setCell(0, 3, 10);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'f2')
 data.setCell(1, 2, 'TestNGAnnotations.Groups')
@@ -235,7 +239,7 @@ window.suiteTableData['Sample_Suite']= { tableData: data, tableDiv: 'times-div-S
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
+              <span class="suite-total-time">Total running time: 11 ms</span>
               <div id="times-div-Sample_Suite">
               </div> <!-- times-div-Sample_Suite -->
             </div> <!-- times-div -->
@@ -268,51 +272,39 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">f1</span>
-                <span class="method-start">60 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">72 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">73 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">f2</span>
-                <span class="method-start">74 ms</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">76 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-test after">
                 <span class="method-name">openGmail</span>
-                <span class="method-start">79 ms</span>
+                <span class="method-start">58 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">composeEmail</span>
-                <span class="method-start">80 ms</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">sendEmail</span>
-                <span class="method-start">81 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">AfterSuite</span>
-                <span class="method-start">181 ms</span>
+                <span class="method-start">164 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
