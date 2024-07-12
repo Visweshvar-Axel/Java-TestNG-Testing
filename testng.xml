@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
+<suite name = "Sample Suite">
+	<test name = "Check Before Test and Before Class">
+		<classes>
+			<class name = "BeforeTest_BeforeClass.Class1"></class>
+			<class name = "BeforeTest_BeforeClass.Class2"></class>
+			<class name = "BeforeTest_BeforeClass.BeforeTestAndBeforeClassTest"></class>
+			<class name = "TestNGAnnotations.AnnotationSequence"></class>
+		</classes>
+	</test>
+</suite>
