@@ -3,11 +3,18 @@
 <suite name = "Sample Suite">
 	<test name = "Testing Groups in TestNG">
 	 <groups>
-	 	<run>
+	 	<define name = "ExecuteAllGropus">
 	 		<include name = "AddItems"></include>
 	 		<include name = "DeleteItems"></include>
 	 		<include name = "DataPrep"></include>
-	 	</run>
+	 		<include name = "Email"></include>
+	 	</define>
+<!--	 	<run>
+	 		<include name = "AddItems"></include>
+	 		<include name = "DeleteItems"></include>
+	 		<include name = "DataPrep"></include>
+	 		<include name = "Email"></include>
+	 	</run>-->
 	 </groups>
 	 <classes>
 			<class name = "TestNGAnnotations.Groups"></class>

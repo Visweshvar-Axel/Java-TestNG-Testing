@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Sample_Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,27 @@
                     <div class="method-list-content passed suite-Sample_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample_Suite" title="TestNGAnnotations.Groups" class="method navigator-link" hash-for-method="composeEmail">composeEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Sample_Suite" title="TestNGAnnotations.Groups" class="method navigator-link" hash-for-method="f1">f1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Sample_Suite" title="TestNGAnnotations.Groups" class="method navigator-link" hash-for-method="f2">f2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample_Suite" title="TestNGAnnotations.Groups" class="method navigator-link" hash-for-method="openGmail">openGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample_Suite" title="TestNGAnnotations.Groups" class="method navigator-link" hash-for-method="sendEmail">sendEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Sample_Suite -->
@@ -132,6 +147,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="composeEmail">
+                  </a> <!-- composeEmail -->
+                  <span class="method-name">composeEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="f1">
                   </a> <!-- f1 -->
                   <span class="method-name">f1</span>
@@ -142,6 +164,20 @@
                   <a name="f2">
                   </a> <!-- f2 -->
                   <span class="method-name">f2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openGmail">
+                  </a> <!-- openGmail -->
+                  <span class="method-name">openGmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendEmail">
+                  </a> <!-- sendEmail -->
+                  <span class="method-name">sendEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,11 +194,12 @@
 &lt;suite name=&quot;Sample Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Testing Groups in TestNG&quot;&gt;
     &lt;groups&gt;
-      &lt;run&gt;
+      &lt;define name=&quot;ExecuteAllGropus&quot;&gt;
         &lt;include name=&quot;AddItems&quot;/&gt;
         &lt;include name=&quot;DeleteItems&quot;/&gt;
         &lt;include name=&quot;DataPrep&quot;/&gt;
-      &lt;/run&gt;
+        &lt;include name=&quot;Email&quot;/&gt;
+      &lt;/define&gt; &lt;!-- ExecuteAllGropus --&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestNGAnnotations.Groups&quot;/&gt;
@@ -205,6 +242,22 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Email</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">composeEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">openGmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sendEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Sample_Suite" class="panel">
@@ -221,20 +274,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f1')
 data.setCell(0, 2, 'TestNGAnnotations.Groups')
-data.setCell(0, 3, 10);
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'f2')
+data.setCell(1, 1, 'composeEmail')
 data.setCell(1, 2, 'TestNGAnnotations.Groups')
 data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sendEmail')
+data.setCell(2, 2, 'TestNGAnnotations.Groups')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'f2')
+data.setCell(3, 2, 'TestNGAnnotations.Groups')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'openGmail')
+data.setCell(4, 2, 'TestNGAnnotations.Groups')
+data.setCell(4, 3, 1);
 window.suiteTableData['Sample_Suite']= { tableData: data, tableDiv: 'times-div-Sample_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 14 ms</span>
               <div id="times-div-Sample_Suite">
               </div> <!-- times-div-Sample_Suite -->
             </div> <!-- times-div -->
@@ -267,39 +332,75 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">52 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">f1</span>
-                <span class="method-start">54 ms</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">60 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">71 ms</span>
+                <span class="method-start">63 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">f2</span>
-                <span class="method-start">71 ms</span>
+                <span class="method-start">63 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openGmail</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">composeEmail</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">sendEmail</span>
                 <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">76 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">AfterSuite</span>
-                <span class="method-start">232 ms</span>
+                <span class="method-start">172 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

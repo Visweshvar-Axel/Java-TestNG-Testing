@@ -47,15 +47,15 @@ public class Groups {
 		  System.out.println("Close log Files objects for Reporting");
 	  }
 	  
-	  @Test
+	  @Test(groups = {"Email"},priority = 1)
 	  public void openGmail() {
 		  System.out.println("Opening Gmail");
 	  }
-	  @Test
+	  @Test(groups = {"Email"},priority = 2)
 	  public void composeEmail() {
 		  System.out.println("Compose Email");
 	  }
-	  @Test
+	  @Test(groups = {"Email"},priority = 3)
 	  public void sendEmail() {
 		  System.out.println("Send Email");
 	  }
