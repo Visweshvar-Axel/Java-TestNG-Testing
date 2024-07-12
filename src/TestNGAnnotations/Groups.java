@@ -46,4 +46,17 @@ public class Groups {
 	  public void AfterSuite() {
 		  System.out.println("Close log Files objects for Reporting");
 	  }
+	  
+	  @Test
+	  public void openGmail() {
+		  System.out.println("Opening Gmail");
+	  }
+	  @Test
+	  public void composeEmail() {
+		  System.out.println("Compose Email");
+	  }
+	  @Test
+	  public void sendEmail() {
+		  System.out.println("Send Email");
+	  }
 }
