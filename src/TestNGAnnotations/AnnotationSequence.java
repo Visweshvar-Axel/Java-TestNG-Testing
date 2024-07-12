@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
 public class AnnotationSequence {
   @Test
   public void f1() {
-  	System.out.println("Login to Flipkart");
+  	System.out.println("Adding Items to Cart");
   }
   @Test
   public void f2() {
-  	System.out.println("Adding Items to Cart");
+  	System.out.println("Deleting Items to Cart");
   }
   @BeforeMethod
   public void beforeMethod() {
-	  System.out.println("Launch Browser");
+	  System.out.println("Launch Browser, Login to Flipkart");
   }
 
   @AfterMethod
