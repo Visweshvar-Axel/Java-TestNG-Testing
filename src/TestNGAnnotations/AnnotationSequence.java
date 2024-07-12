@@ -7,10 +7,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
 public class AnnotationSequence {
-  @Test
-  public void f() {
-	  System.out.println("In Test");
-  }
+	@Test
+	public void f1() {
+		System.out.println("In Test1");
+	}
+	@Test
+	public void f2() {
+		System.out.println("In Test2");
+	}
   @BeforeMethod
   public void beforeMethod() {
 	  System.out.println("@BeforeMethod");
