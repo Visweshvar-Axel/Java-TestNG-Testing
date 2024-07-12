@@ -9,21 +9,26 @@ import org.testng.annotations.AfterTest;
 public class AnnotationSequence {
   @Test
   public void f() {
+	  System.out.println("In Test");
   }
   @BeforeMethod
   public void beforeMethod() {
+	  System.out.println("@BeforeMethod");
   }
 
   @AfterMethod
   public void afterMethod() {
+	  System.out.println("@AfterMethod");
   }
 
   @BeforeTest
   public void beforeTest() {
+	  System.out.println("@BeforeTest");
   }
 
   @AfterTest
   public void afterTest() {
+	  System.out.println("@AfterTest");
   }
 
 }
