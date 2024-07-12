@@ -9,7 +9,12 @@
 	 		<include name = "DataPrep"></include>
 	 		<include name = "Email"></include>
 	 	</define>
+	 	<run>
+	 		<include name = "ExecuteAllGropus"></include>
+	 		<exclude name = "Teardown"></exclude>
+	 	</run>
 <!--	 	<run>
+	 		<include name = "ExecuteAllGropus"></include>
 	 		<include name = "AddItems"></include>
 	 		<include name = "DeleteItems"></include>
 	 		<include name = "DataPrep"></include>

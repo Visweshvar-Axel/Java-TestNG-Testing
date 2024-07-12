@@ -24,7 +24,7 @@ public class Groups {
 		  System.out.println("Launch Browser, Login to Flipkart");
 	  }
 
-	  @AfterMethod(groups = {"AddItems","DeleteItems"})
+	  @AfterMethod(groups = {"AddItems","DeleteItems","Teardown"})
 	  public void afterMethod() {
 		  System.out.println("Close Browse:");
 	  }
@@ -34,7 +34,7 @@ public class Groups {
 		  System.out.println("Fetch Data from xml");
 	  }
 
-	  @AfterTest(groups = {"AddItems","DeleteItems"})
+	  @AfterTest(groups = {"AddItems","DeleteItems","Teardown"})
 	  public void afterTest() {
 		  System.out.println("Clears Data from the cache");
 	  }
