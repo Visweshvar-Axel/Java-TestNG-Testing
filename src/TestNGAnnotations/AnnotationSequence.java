@@ -13,47 +13,82 @@ import org.testng.annotations.Test;
 public class AnnotationSequence {
   @Test
   public void f1() {
-  	System.out.println("In Test1");
+  	System.out.println("Login to Flipkart");
   }
   @Test
   public void f2() {
-  	System.out.println("In Test2");
+  	System.out.println("Adding Items to Cart");
   }
   @BeforeMethod
   public void beforeMethod() {
-	  System.out.println("@BeforeMethod");
+	  System.out.println("Launch Browser");
   }
 
   @AfterMethod
   public void afterMethod() {
-	  System.out.println("@AfterMethod");
+	  System.out.println("Close Browse:");
   }
 
   @BeforeTest
   public void beforeTest() {
-	  System.out.println("@BeforeTest");
+	  System.out.println("Fetch Data from xml");
   }
 
   @AfterTest
   public void afterTest() {
-	  System.out.println("@AfterTest");
+	  System.out.println("Clears Data from the cache");
   }
   @BeforeSuite
   public void BeforeSuite() {
-	  System.out.println("@BeforeSuite");
+	  System.out.println("Create Log Files, Create obj ect3 for Reporting");
   }
   @AfterSuite
   public void AfterSuite() {
-	  System.out.println("@AfterSuite");
+	  System.out.println("Close log Files objects for Reporting");
   }
-  @BeforeClass
-  public void BeforeClass() {
-	  System.out.println("@BeforeClass");
-  }
-  @AfterClass
-  public void AfterClass() {
-	  System.out.println("@AfterClass");
-  }
+//  @Test
+//  public void f1() {
+//	  System.out.println("In Test1");
+//  }
+//  @Test
+//  public void f2() {
+//	  System.out.println("In Test2");
+//  }
+//  @BeforeMethod
+//  public void beforeMethod() {
+//	  System.out.println("@BeforeMethod");
+//  }
+//  
+//  @AfterMethod
+//  public void afterMethod() {
+//	  System.out.println("@AfterMethod");
+//  }
+//  
+//  @BeforeTest
+//  public void beforeTest() {
+//	  System.out.println("@BeforeTest");
+//  }
+//  
+//  @AfterTest
+//  public void afterTest() {
+//	  System.out.println("@AfterTest");
+//  }
+//  @BeforeSuite
+//  public void BeforeSuite() {
+//	  System.out.println("@BeforeSuite");
+//  }
+//  @AfterSuite
+//  public void AfterSuite() {
+//	  System.out.println("@AfterSuite");
+//  }
+//  @BeforeClass
+//  public void BeforeClass() {
+//	  System.out.println("@BeforeClass");
+//  }
+//  @AfterClass
+//  public void AfterClass() {
+//	  System.out.println("@AfterClass");
+//  }
 /**
 @BeforeSuite
 @BeforeTest
