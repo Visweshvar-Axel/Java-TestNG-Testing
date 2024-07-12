@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
 <suite name = "Sample Suite">
+	<test name = "Testing Groups in TestNG">
+	 <groups></groups>
+	</test>
+</suite>
+<!--<suite name = "Sample Suite">
 	<test name = "Check Before Test and Before Class">
 		<classes>
 			<class name = "BeforeTest_BeforeClass.Class1"></class>
@@ -9,4 +14,4 @@
 			<class name = "TestNGAnnotations.AnnotationSequence"></class>
 		</classes>
 	</test>
-</suite>
+</suite>-->

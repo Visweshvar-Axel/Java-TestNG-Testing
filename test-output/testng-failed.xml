@@ -6,10 +6,10 @@
       <class name="BeforeTest_BeforeClass.Class1">
         <methods>
           <include name="AfterSuite"/>
-          <include name="f1"/>
           <include name="BeforeClass"/>
           <include name="BeforeSuite"/>
           <include name="AfterClass"/>
+          <include name="f2"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
