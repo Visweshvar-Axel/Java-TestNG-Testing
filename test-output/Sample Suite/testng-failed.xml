@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Sample Suite]">
-  <parameter name="Product Name" value="watch"/>
-  <parameter name="Color" value="Black"/>
-  <parameter name="Product Code" value="AX-500"/>
-  <parameter name="Make" value="2024"/>
-  <test thread-count="5" name="Testing Parameterization of Data(failed)">
+  <test thread-count="5" name="SampleTestClass(failed)">
     <classes>
-      <class name="TestNGAnnotations.AnnotationSequence">
+      <class name="TestNGAnnotations.SampleTestClass">
         <methods>
-          <include name="f1"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="BeforeSuite"/>
-          <include name="beforeMethod"/>
-          <include name="AfterSuite"/>
-          <include name="afterMethod"/>
+          <include name="sampleTest2"/>
+          <include name="sampleTest4"/>
+          <include name="sampleTest3"/>
+          <include name="sampleTest5"/>
         </methods>
-      </class> <!-- TestNGAnnotations.AnnotationSequence -->
+      </class> <!-- TestNGAnnotations.SampleTestClass -->
     </classes>
-  </test> <!-- Testing Parameterization of Data(failed) -->
+  </test> <!-- SampleTestClass(failed) -->
 </suite> <!-- Failed suite [Sample Suite] -->
