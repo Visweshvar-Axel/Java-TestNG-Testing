@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
 <suite name = "Sample Suite">
+	<test name = "DataPR̥roviderTest">
+		<classes>
+			<class name = "TestNGAnnotations.DataProviderExample"></class>
+		</classes>
+	</test>
+</suite>
+<!--<suite name = "Sample Suite">
 	<parameter name = "Product Name" value = "watch"></parameter>
 	<parameter name = "Color" value = "Black"></parameter>
 	<parameter name = "Product Code" value = "AX-500"></parameter>
@@ -19,7 +26,7 @@
 			<class name = "TestNGAnnotations.AnnotationSequence"></class>
 	 </classes>
 	</test>
-</suite>
+</suite>-->
 <!--<suite name = "Sample Suite">
 	<test name = "Testing Groups in TestNG">
 	 <groups>
