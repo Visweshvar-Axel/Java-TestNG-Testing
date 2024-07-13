@@ -10,6 +10,15 @@
 			<class name = "TestNGAnnotations.AnnotationSequence"></class>
 	 </classes>
 	</test>
+	<test name = "Testing Parameterization of Data_2">
+	<parameter name = "Product Name" value = "watch"></parameter>
+	<parameter name = "Color" value = "white"></parameter>
+	<parameter name = "Product Code" value = "AX-505"></parameter>
+	<parameter name = "Make" value = "2023"></parameter>
+	 <classes>
+			<class name = "TestNGAnnotations.AnnotationSequence"></class>
+	 </classes>
+	</test>
 </suite>
 <!--<suite name = "Sample Suite">
 	<test name = "Testing Groups in TestNG">
