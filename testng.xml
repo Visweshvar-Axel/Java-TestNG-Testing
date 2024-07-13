@@ -4,17 +4,17 @@
 <suite name = "Sample Suite" thread-count = "2" parallel = "methods">
 	<test name = "ExamplePriority">
 		<classes>
-<!--			<class name = "BeforeTest_BeforeClass.Class1"></class>
-			<class name = "BeforeTest_BeforeClass.Class2"></class>
-			<class name = "BeforeTest_BeforeClass.BeforeTestAndBeforeClassTest"></class>-->
-			<class name = "TestNGAnnotations.ExamplePriority"></class>
+			<class name = "BeforeTest_BeforeClass.Class1"></class>
+<!--			<class name = "BeforeTest_BeforeClass.Class2"></class>
+			<class name = "BeforeTest_BeforeClass.BeforeTestAndBeforeClassTest"></class>
+			<class name = "TestNGAnnotations.ExamplePriority"></class>-->
 		</classes>
 	</test>
-	<test name = "Groups">
+<!--	<test name = "Groups">
 		<classes>
 			<class name = "TestNGAnnotations.Groups"></class>
 		</classes>
-	</test>
+	</test>-->
 </suite>
 <!--<suite name = "Sample Suite">
 	<parameter name = "Product Name" value = "watch"></parameter>

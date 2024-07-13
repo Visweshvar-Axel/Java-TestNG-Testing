@@ -24,9 +24,9 @@ public class Class1 extends BeforeTestAndBeforeClassTest {
 			}
 		}
 	  }
-	  @Test
+	  @Test(threadPoolSize = 5,invocationCount = 10)
 	  public void f2() {
 //		  throw new SkipException("asd");
-		  System.out.println("In Test4");
+		  System.out.println("In Test4 "+Thread.currentThread().getName());
 	  }
 }
