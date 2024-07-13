@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Sample Suite]">
+  <parameter name="Product Name" value="watch"/>
+  <parameter name="Color" value="Black"/>
+  <parameter name="Product Code" value="AX-500"/>
+  <parameter name="Make" value="2024"/>
+  <test thread-count="5" name="Testing Parameterization of Data(failed)">
     <classes>
-      <class name="BeforeTest_BeforeClass.Class1">
+      <class name="TestNGAnnotations.AnnotationSequence">
         <methods>
-          <include name="AfterSuite"/>
-          <include name="BeforeClass"/>
-          <include name="BeforeSuite"/>
-          <include name="AfterClass"/>
-          <include name="f2"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="f1"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="AfterSuite"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- BeforeTest_BeforeClass.Class1 -->
+      </class> <!-- TestNGAnnotations.AnnotationSequence -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testing Parameterization of Data(failed) -->
+</suite> <!-- Failed suite [Sample Suite] -->

@@ -10,10 +10,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AnnotationSequence {
-  @Parameters({"Product Name"})
+  @Parameters({"Product Name", "Color", "Product Code", "Make"})
   @Test
-  public void f1(String name) {
+  public void f1(String name, String color, String code, String make) {
   	System.out.println("Product "+name+" is adding Items to Cart");
+  	System.out.println(color);
+  	System.out.println(code);
+  	System.out.println(make);
   }
   @Test
   public void f2() {

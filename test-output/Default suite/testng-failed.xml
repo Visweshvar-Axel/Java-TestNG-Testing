@@ -3,19 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BeforeTest_BeforeClass.Class1">
+      <class name="TestNGAnnotations.AnnotationSequence">
         <methods>
-          <include name="AfterSuite"/>
-          <include name="BeforeClass"/>
-          <include name="BeforeSuite"/>
-          <include name="AfterClass"/>
-          <include name="f2"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="f1"/>
           <include name="afterTest"/>
+          <include name="testingParameters"/>
+          <include name="beforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="AfterSuite"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- BeforeTest_BeforeClass.Class1 -->
+      </class> <!-- TestNGAnnotations.AnnotationSequence -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,9 @@
 <!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
 <suite name = "Sample Suite">
 	<parameter name = "Product Name" value = "watch"></parameter>
+	<parameter name = "Color" value = "Black"></parameter>
+	<parameter name = "Product Code" value = "AX-500"></parameter>
+	<parameter name = "Make" value = "2024"></parameter>
 	<test name = "Testing Parameterization of Data">
 	 <classes>
 			<class name = "TestNGAnnotations.AnnotationSequence"></class>
