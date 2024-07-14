@@ -2,6 +2,9 @@
 <!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
 <!--<suite name = "Sample Suite" thread-count = "2" parallel = "tests">-->
 <suite name = "Sample Suite">
+	<listeners>
+		<listener class-name = "retryAnalyzerPackage.Listener"></listener>
+	</listeners>
 	<test name = "ExamplePriority">
 		<classes>
 			<class name = "retryAnalyzerPackage.retryTest"></class>
