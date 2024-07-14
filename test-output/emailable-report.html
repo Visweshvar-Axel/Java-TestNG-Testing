@@ -8,14 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">48</td><td></td><td></td></tr>
+<tr><th colspan="8">Sample Suite</th></tr>
+<tr><td><a href="#t0">ExamplePriority</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num attn">3</td><td class="num">79</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">CustomAnnotation.SampleTestClass</td><td><a href="#m0">runRegressionTests</a></td><td rowspan="1">1720980086786</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m1">runSmokeTests</a></td><td rowspan="1">1720980086798</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">sampleTest1</a></td><td rowspan="1">1720980086802</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">sampleTest2</a></td><td rowspan="1">1720980086804</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ExamplePriority &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">retryAnalyzerPackage.retryTest</td><td><a href="#m0">Login1</a></td><td rowspan="1">1720982929202</td><td rowspan="1">19</td></tr><tr class="failedeven"><td><a href="#m1">Login2</a></td><td rowspan="1">1720982929232</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">Login3</a></td><td rowspan="1">1720982929241</td><td rowspan="1">0</td></tr><tr><th colspan="4">ExamplePriority &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="4">retryAnalyzerPackage.retryTest</td><td><a href="#m3">Login2</a></td><td rowspan="2">1720982929226</td><td rowspan="2">1</td></tr><tr class="retriedeven"><td><a href="#m4">Login2</a></td></tr><tr class="retriedeven"><td><a href="#m5">Login3</a></td><td rowspan="2">1720982929238</td><td rowspan="2">1</td></tr><tr class="retriedeven"><td><a href="#m6">Login3</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">CustomAnnotation.SampleTestClass#runRegressionTests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">CustomAnnotation.SampleTestClass#runSmokeTests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">CustomAnnotation.SampleTestClass#sampleTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">CustomAnnotation.SampleTestClass#sampleTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ExamplePriority</h2><h3 id="m0">retryAnalyzerPackage.retryTest#Login1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login1(retryTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">retryAnalyzerPackage.retryTest#Login2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login2(retryTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">retryAnalyzerPackage.retryTest#Login3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login3(retryTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">retryAnalyzerPackage.retryTest#Login2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login2(retryTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">retryAnalyzerPackage.retryTest#Login2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login2(retryTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">retryAnalyzerPackage.retryTest#Login3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login3(retryTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">retryAnalyzerPackage.retryTest#Login3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at retryAnalyzerPackage.retryTest.Login3(retryTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

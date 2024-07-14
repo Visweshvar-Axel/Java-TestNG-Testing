@@ -8,6 +8,7 @@
     <classes>
       <class name="retryAnalyzerPackage.retryTest">
         <methods>
+          <include name="cleanResults"/>
           <include name="Login2"/>
           <include name="Login3"/>
           <include name="Login1"/>
