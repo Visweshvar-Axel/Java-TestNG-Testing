@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<!DOCTYPE suite SYSTEM "http://tegtng.orq/tegtng-1.0.dtd" >-->
 <!--<suite name = "Sample Suite" thread-count = "2" parallel = "tests">-->
-<suite name = "Sample Suite" thread-count = "2" parallel = "methods">
+<!--<suite name = "Sample Suite" thread-count = "2" parallel = "methods">
 	<test name = "ExamplePriority">
 		<classes>
 			<class name = "BeforeTest_BeforeClass.Class1"></class>
-<!--			<class name = "BeforeTest_BeforeClass.Class2"></class>
+			<class name = "BeforeTest_BeforeClass.Class2"></class>
 			<class name = "BeforeTest_BeforeClass.BeforeTestAndBeforeClassTest"></class>
-			<class name = "TestNGAnnotations.ExamplePriority"></class>-->
+			<class name = "TestNGAnnotations.ExamplePriority"></class>
 		</classes>
 	</test>
-<!--	<test name = "Groups">
+	<test name = "Groups">
 		<classes>
 			<class name = "TestNGAnnotations.Groups"></class>
 		</classes>
-	</test>-->
-</suite>
-<!--<suite name = "Sample Suite">
+	</test>
+</suite>-->
+<suite name = "Sample Suite">
 	<parameter name = "Product Name" value = "watch"></parameter>
 	<parameter name = "Color" value = "Black"></parameter>
 	<parameter name = "Product Code" value = "AX-500"></parameter>
@@ -35,7 +35,7 @@
 			<class name = "TestNGAnnotations.AnnotationSequence"></class>
 	 </classes>
 	</test>
-</suite>-->
+</suite>
 <!--<suite name = "Sample Suite">
 	<test name = "Testing Groups in TestNG">
 	 <groups>

@@ -6,10 +6,30 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AnnotationSequence {
+	
+  @DataProvider(name = "productData")
+  public Object[][] createProductData() {
+      return new Object[][] {
+          {"Watch", "Black", "AX-500", "2024"},
+          {"Watch", "White", "AX-505", "2023"},
+          {"Laptop", "Silver", "AX-506", "2022"},
+          {"Phone", "Gold", "AX-507", "2021"}
+      };
+  }
+  
+  @Test(dataProvider = "productData")
+  public void testProduct(String name, String color, String code, String make) {
+      System.out.println("Product " + name + " is adding Items to Cart");
+      System.out.println("Color: " + color);
+      System.out.println("Product Code: " + code);
+      System.out.println("Make: " + make);
+  }
+	  
   @Parameters({"Product Name", "Color", "Product Code", "Make"})
   @Test
   public void f1(String name, String color, String code, String make) {
@@ -54,6 +74,7 @@ public class AnnotationSequence {
   public void testingParameters(String ItemName) {
 	  System.out.println("The product name is: "+ItemName);
   }
+
   
 //  @Test
 //  public void f1() {
